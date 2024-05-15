@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -x
+
+systemctl stop micro-ros-create-ap.service
+systemctl disable micro-ros-create-ap.service

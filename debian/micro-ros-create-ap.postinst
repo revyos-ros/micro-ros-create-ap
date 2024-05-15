@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -ex
+
+systemctl enable micro-ros-create-ap.service
+systemctl start micro-ros-create-ap.service

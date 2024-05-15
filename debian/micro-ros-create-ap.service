@@ -1,0 +1,10 @@
+[Unit]
+Description=Start WiFi AP
+After=network.target systemd-user-sessions.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'sleep 10; nmcli device wifi hotspot ifname wlan0 con-name MicroROS_AP ssid MicroROS_AP password 12345678; nmcli con modify MicroROS_AP autoconnect yes; nmcli con modify MicroROS_AP 802-11-wireless.band bg;'
+
+[Install]
+WantedBy=multi-user.target
