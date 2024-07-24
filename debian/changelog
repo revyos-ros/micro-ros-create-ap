@@ -1,3 +1,10 @@
+micro-ros-create-ap (0.1.0-1~revyos2) bullseye; urgency=medium
+
+  * Release for git
+  * Fix some Lintian errors
+
+ -- CHEN Xuan <chenxuan@iscas.ac.cn>  Wed, 24 Jul 2024 15:28:33 +0000
+
 micro-ros-create-ap (0.1.0-1~revyos1) bullseye; urgency=medium
 
   * Add a systemd service to start Wi-Fi AP.

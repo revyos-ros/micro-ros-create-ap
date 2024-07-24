@@ -2,5 +2,8 @@
 
 set -ex
 
-systemctl enable micro-ros-create-ap.service
-systemctl start micro-ros-create-ap.service
+deb-systemd-invoke enable micro-ros-create-ap.service
+deb-systemd-invoke start micro-ros-create-ap.service
+
+#DEBHELPER#
+

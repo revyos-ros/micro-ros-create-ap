@@ -1,6 +1,9 @@
 #!/bin/sh
 
-set -x
+set -ex
 
-systemctl stop micro-ros-create-ap.service
-systemctl disable micro-ros-create-ap.service
+deb-systemd-invoke stop micro-ros-create-ap.service
+deb-systemd-invoke disable micro-ros-create-ap.service
+
+#DEBHELPER#
+
